@@ -7,7 +7,8 @@
     "pageLevelProgress": {
       "type": "string",
       "required": true,
-      "default": "Page sections",
+      "default": "Secciones de página",
+      "title": "Progreso de nivel de página",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,7 +16,8 @@
     "pageLevelProgressIndicatorBar": {
       "type": "string",
       "required": true,
-      "default": "Page progress. Use this to listen to the list of regions in this topic and whether they're completed. You can jump directly to any that are incomplete or which sound particularly interesting. {{percentageComplete}}%",
+      "title": "barra indicadora de progreso de nivel de página",
+      "default": "Progreso de la página. Use esto para escuchar la lista de regiones en este tema y si están completas. Puede saltar directamente a cualquiera que esté incompleto o que suene particularmente interesante. {{percentageComplete}}%",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -23,7 +25,8 @@
     "pageLevelProgressMenuBar": {
       "type": "string",
       "required": true,
-      "default": "Page completion {{percentageComplete}}%",
+      "title": "barra de menú de progreso de nivel de página",
+      "default": "Finalización de página {{percentageComplete}}%",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -31,7 +34,8 @@
     "pageLevelProgressEnd": {
       "type": "string",
       "required": true,
-      "default": "You have reached the end of the list of page sections.",
+      "default": "Ha llegado al final de la lista de secciones de la página.",
+      "title": "Página Nivel Progreso fin",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -39,7 +43,7 @@
     "optionalContent": {
       "type": "string",
       "required": true,
-      "default": "Optional content",
+      "default": "Contenido opcional",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -66,43 +70,43 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progreso de nivel de página",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Está habilitado",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is enabled or disabled."
+                  "help": "Controla si la extensión Progreso de nivel de página está habilitada o deshabilitada."
                 },
                 "_showPageCompletion": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show page completion",
+                  "title": "Mostrar finalización de página",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the progress calculations are based on all components - or only those that are set to be displayed in Page Level Progress."
+                  "help": "Controla si los cálculos de progreso se basan en todos los componentes, o solo en aquellos que están configurados para mostrarse en Progreso de nivel de página."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show course completion indicator",
+                  "title": "Mostrar indicador de finalización del curso",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the course title."
+                  "help": "Controla si el indicador de finalización se muestra junto al título del curso.."
                 },
                 "_isShownInNavigationBar": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show progress in the navigation bar",
+                  "title": "Mostrar el progreso en la barra de navegación",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows in the navigation bar"
+                  "help": "Controla si el indicador de finalización se muestra en la barra de navegación"
                 }
               }
             }
@@ -114,7 +118,7 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progreso de nivel de página",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
@@ -123,34 +127,34 @@
                   "title": "Is enabled",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is enabled or disabled for this page."
+                  "help": "Controla si la extensión Progreso de nivel de página está habilitada o deshabilitada para esta página."
                 },
                 "_showPageCompletion": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show page completion",
+                  "title": "Mostrar finalización de página",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the progress calculations for this page are based on all components and the overall page - or only the components that are set to be displayed in Page Level Progress."
+                  "help": "Controla si los cálculos de progreso de esta página se basan en todos los componentes y en la página general, o solo en los componentes que están configurados para mostrarse en Progreso de nivel de página."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show page completion indicator",
+                  "title": "Mostrar indicador de finalización de página",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the page title."
+                  "help": "Controla si el indicador de finalización se muestra junto al título de la página."
                 },
                 "_excludeAssessments": {
                   "type": "boolean",
                   "required": false,
                   "default": false,
-                  "title": "Exclude assessments.",
+                  "title": "Excluir evaluaciones.",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the progress calculations will include assessments."
+                  "help": "Controla si los cálculos de progreso incluirán evaluaciones."
                 }
               }
             }
@@ -162,7 +166,7 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progreso de nivel de página",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
@@ -171,16 +175,16 @@
                   "title": "Is enabled",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is used on this article."
+                  "help": "Controla si la extensión Progreso de nivel de página se usa en este artículo."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show article completion indicator",
+                  "title": "Mostrar indicador de finalización del artículo",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the article title."
+                  "help": "Controla si el indicador de finalización se muestra junto al título del artículo."
                 }
               }
             }
@@ -192,7 +196,7 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progreso de nivel de página",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
@@ -201,16 +205,16 @@
                   "title": "Is enabled",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Page Level Progress extension is used on this block."
+                  "help": "Controla si la extensión Progreso de nivel de página se usa en este bloque."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show block completion indicator",
+                  "title": "Mostrar indicador de finalización de bloque",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the block title."
+                  "help": "Controla si el indicador de finalización se muestra junto al título del bloque."
                 }
               }
             }
@@ -222,25 +226,25 @@
             "_pageLevelProgress": {
               "type": "object",
               "required": false,
-              "legend": "Page Level Progress",
+              "legend": "Progreso de nivel de página",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Está habilitado",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether this component should be displayed in the Page Level Progress extension or not."
+                  "help": "Controla si este componente debe mostrarse en la extensión Progreso de nivel de página o no."
                 },
                 "_isCompletionIndicatorEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": false,
-                  "title": "Show component completion indicator",
+                  "title": "Mostrar indicador de finalización del componente",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the completion indicator shows next to the component title."
+                  "help": "Controla si el indicador de finalización se muestra junto al título del componente.."
                 }
               }
             }
