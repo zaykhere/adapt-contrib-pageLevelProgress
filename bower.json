@@ -6,7 +6,7 @@
   "bugs": "https://github.com/adaptlearning/adapt-contrib-pageLevelProgress/issues",
   "extension": "pageLevelProgress",
   "displayName": "Page Level Progress",
-  "description": "An extension to show a learner's progress through a page via a progress bar displayed in the top navigation area.",
+  "description": "Una extensión para mostrar el progreso de un alumno a través de una página a través de una barra de progreso.",
   "main": "/js/adapt-contrib-pageLevelProgress.js",
   "keywords": [
     "adapt-plugin",
